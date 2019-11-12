@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', '\glorifiedking\BusTravel\Http\Controllers\FrontendController@homepage')->name('bustravel.homepage');
 
 Auth::routes();
 
