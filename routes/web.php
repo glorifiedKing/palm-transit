@@ -20,6 +20,9 @@ Route::get('/bt-remove-cart-item/{id}','\glorifiedking\BusTravel\Http\Controller
 Route::get('/bt-checkout','\glorifiedking\BusTravel\Http\Controllers\FrontendController@checkout')->name('bustravel.cart.checkout');
 Route::get('/bt-test-momo','\glorifiedking\BusTravel\Http\Controllers\ApiController@show_debit_test_form')->name('bustravel.momo.test.form');
 Route::post('/bt-test-momo','\glorifiedking\BusTravel\Http\Controllers\ApiController@send_debit_request')->name('bustravel.api.debit');
+Route::get('/bt-bus-times','\glorifiedking\BusTravel\Http\Controllers\FrontendController@bus_times')->name('bustravel.bus.times');
+Route::get('/bt-stations','\glorifiedking\BusTravel\Http\Controllers\FrontendController@stations')->name('bustravel.bus.stations');
+Route::get('/bt-faqs','\glorifiedking\BusTravel\Http\Controllers\FrontendController@faqs')->name('bustravel.bus.faqs');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
