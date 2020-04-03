@@ -16,6 +16,7 @@ Route::post('/', '\glorifiedking\BusTravel\Http\Controllers\FrontendController@s
 Route::get('/bt-add-cart/{id}/{date}/{type?}', '\glorifiedking\BusTravel\Http\Controllers\FrontendController@add_to_basket')->name('bustravel.add_to_basket');
 Route::get('/bt-cart', '\glorifiedking\BusTravel\Http\Controllers\FrontendController@cart')->name('bustravel.cart');
 Route::get('/bt-clear-cart','\glorifiedking\BusTravel\Http\Controllers\FrontendController@clear_cart')->name('bustravel.cart.clear');
+Route::any('/payment/callback','\glorifiedking\BusTravel\Http\Controllers\FrontendController@process_payment_callback')->name('bustravel.payment.callback');
 Route::get('/bt-remove-cart-item/{id}','\glorifiedking\BusTravel\Http\Controllers\FrontendController@remove_cart_item')->name('bustravel.cart.remove.item');
 Route::get('/bt-checkout','\glorifiedking\BusTravel\Http\Controllers\FrontendController@checkout')->name('bustravel.cart.checkout');
 Route::get('/bt-test-momo','\glorifiedking\BusTravel\Http\Controllers\ApiController@show_debit_test_form')->name('bustravel.momo.test.form');
