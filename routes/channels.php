@@ -14,3 +14,7 @@
 Broadcast::channel('App.User.{id}', function ($user, $id) {
     return (int) $user->id === (int) $id;
 });
+
+Broadcast::channel('transaction.{transactionId}', function ($user, $transactionId) {
+    return $user->id === glorifiedking\BusTravel\PaymentTransaction::findOrNew($transactionId)->user_id;
+});
