@@ -16,7 +16,7 @@ Broadcast::channel('App.User.{id}', function ($user, $id) {
     return (int) $user->id === (int) $id;
 });
 
-Broadcast::channel('transaction.{transactionId}', function ($user, PaymentTrasaction $transaction) {
+Broadcast::channel('transactionOOOLD.{transactionId}', function ($user, PaymentTrasaction $transaction) {
    // return $user->id === $transaction->user_id;
     return true;
 });
