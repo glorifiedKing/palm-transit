@@ -27,6 +27,7 @@ Route::post('/bt-test-momo','\glorifiedking\BusTravel\Http\Controllers\ApiContro
 Route::get('/bt-bus-times','\glorifiedking\BusTravel\Http\Controllers\FrontendController@bus_times')->name('bustravel.bus.times');
 Route::get('/bt-stations','\glorifiedking\BusTravel\Http\Controllers\FrontendController@stations')->name('bustravel.bus.stations');
 Route::get('/bt-faqs','\glorifiedking\BusTravel\Http\Controllers\FrontendController@faqs')->name('bustravel.bus.faqs');
+Route::any('/ussd','\glorifiedking\BusTravel\Http\Controllers\ApiController@ussd')->name('bustravel.ussd');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
