@@ -1,6 +1,6 @@
 @extends('bustravel::frontend.layouts.app')
 @section('title', 'Unauthorized access')
-@section('page-heading','Unauthorized Access')    
+@section('page-heading','Bus Ticketing System')    
 
 
             @section('content')
