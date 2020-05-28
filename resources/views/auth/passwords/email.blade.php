@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@extends('bustravel::frontend.layouts.app')
+@section('title', 'PalmKash Bus Reset password')
+@section('page-heading','Bus Ticketing System')
 
 @section('content')
 <div class="container">
