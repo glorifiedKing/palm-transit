@@ -317,6 +317,18 @@ return [
             ],
         ],
         [
+            'name' => 'momentjs',
+            'active' => true,
+            'files' => [
+                [
+                    'type' => 'js',
+                    'asset' => false,
+                    'location' => '//cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment-with-locales.min.js',
+                ],
+               
+            ],
+        ],
+        [
             'name' => 'Chartjs',
             'active' => false,
             'files' => [
