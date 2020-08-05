@@ -29,6 +29,7 @@ Route::get('/bt-stations','\glorifiedking\BusTravel\Http\Controllers\FrontendCon
 Route::get('/bt-faqs','\glorifiedking\BusTravel\Http\Controllers\FrontendController@faqs')->name('bustravel.bus.faqs');
 Route::any('/ussd','\glorifiedking\BusTravel\Http\Controllers\ApiController@ussd')->name('bustravel.ussd');
 Route::any('/ticket-boarding','\glorifiedking\BusTravel\Http\Controllers\ApiController@ticket_scan')->name('bustravel.ticket.scan');
+Route::any('/payment/result','\glorifiedking\BusTravel\Http\Controllers\FrontendController@checkout_result')->name('bustravel.payment.result');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
