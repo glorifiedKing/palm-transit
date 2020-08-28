@@ -28,7 +28,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
          $schedule->command('bustravel:cleardebit')
-                  ->everyFiveMinutes()->withoutOverlapping(10);
+                  ->everyMinute()->withoutOverlapping(5);
     }
 
     /**
