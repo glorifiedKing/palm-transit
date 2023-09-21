@@ -13,6 +13,7 @@
         "glorifiedking/bustravel": "dev-master",
         "laravel/framework": "^6.2",
         "laravel/tinker": "^1.0",
+        "mews/captcha": "^3.2",
         "mike42/escpos-php": "^3.0",
         "predis/predis": "^1.1",
         "propaganistas/laravel-phone": "^4.2",
@@ -63,14 +64,5 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    },
-	"repositories": {
-		"dev-package": {
-			"type": "path",
-			"url":"/home/wizimara/wizimara/laravel-apps/packages/Bustravel",
-			"options": {
-				"symlink": true
-			}
-		}
-	}
+    }
 }
