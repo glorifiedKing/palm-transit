@@ -7,7 +7,7 @@ return [
         'mtn_rw' => [
             'username' => 'palm_kash',
             'password' => '12345',
-            'url' => 'https://testbed.palmkash.com/palmgw/merchantpayment/',
+            'url' => env('palmkash_gateway_url', 'https://testbed.palmkash.com/palmgw/merchantpayment'),
          ],
     ],
 ];
