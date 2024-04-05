@@ -18,6 +18,7 @@
         "mike42/escpos-php": "^4.0",
         "predis/predis": "^2.0",
         "propaganistas/laravel-phone": "^5.0",
+        "spatie/laravel-backup": "^8.6",
         "te7a-houdini/laravel-trix": "^2.0"
     },
     "require-dev": {
