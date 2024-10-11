@@ -34,7 +34,7 @@ Route::get('/bt-faqs', [\glorifiedking\BusTravel\Http\Controllers\FrontendContro
 Route::any('/ussd', [\glorifiedking\BusTravel\Http\Controllers\ApiController::class, 'ussd'])->name('bustravel.ussd');
 Route::any('/ticket-boarding', [\glorifiedking\BusTravel\Http\Controllers\ApiController::class, 'ticket_scan'])->name('bustravel.ticket.scan');
 Route::any('/get-stations', [\glorifiedking\BusTravel\Http\Controllers\ApiController::class, 'get_all_stations'])->name('bustravel.api.stations');
-Route::any('/search-routes', [\glorifiedking\BusTravel\Http\Controllers\ApiController::class, 'search_routes'])->name('bustravel.api.routes');
+Route::any('/search-routes', [\glorifiedking\BusTravel\Http\Controllers\ApiController::class, 'search_routes'])->name('bustravel.api.route');
 Route::any('/payment/result', [\glorifiedking\BusTravel\Http\Controllers\FrontendController::class, 'checkout_result'])->name('bustravel.payment.result');
 Auth::routes();
 
