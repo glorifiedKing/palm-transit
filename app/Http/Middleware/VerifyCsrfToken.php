@@ -23,5 +23,6 @@ class VerifyCsrfToken extends Middleware
         'payment/*',
         'ussd*',
         'ticket-boarding*',
+        'get*'
     ];
 }
