@@ -1,4 +1,5 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,8 @@ Route::get('/bt-stations', [\glorifiedking\BusTravel\Http\Controllers\FrontendCo
 Route::get('/bt-faqs', [\glorifiedking\BusTravel\Http\Controllers\FrontendController::class, 'faqs'])->name('bustravel.bus.faqs');
 Route::any('/ussd', [\glorifiedking\BusTravel\Http\Controllers\ApiController::class, 'ussd'])->name('bustravel.ussd');
 Route::any('/ticket-boarding', [\glorifiedking\BusTravel\Http\Controllers\ApiController::class, 'ticket_scan'])->name('bustravel.ticket.scan');
+Route::any('/get-stations', [\glorifiedking\BusTravel\Http\Controllers\ApiController::class, 'get_all_stations'])->name('bustravel.api.stations');
+Route::any('/search-routes', [\glorifiedking\BusTravel\Http\Controllers\ApiController::class, 'search_routes'])->name('bustravel.api.routes');
 Route::any('/payment/result', [\glorifiedking\BusTravel\Http\Controllers\FrontendController::class, 'checkout_result'])->name('bustravel.payment.result');
 Auth::routes();
 
